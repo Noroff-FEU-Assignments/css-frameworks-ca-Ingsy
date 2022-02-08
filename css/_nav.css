@@ -13,6 +13,7 @@
 .navbar {
   background-color: var(--nav-colour) !important;
   color: white;
+  height: 70px;
 }
 
 .navbar-light .navbar-nav .active > .nav-link {

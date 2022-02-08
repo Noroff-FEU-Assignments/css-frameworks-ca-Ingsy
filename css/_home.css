@@ -1,0 +1,9 @@
+.carousel-indicators li {
+  weight: 30px;
+  height: 30px;
+  color: var(--white-colour);
+}
+
+.carousel-indicators li .active {
+  color: var(--pink-colour) !important;
+}
