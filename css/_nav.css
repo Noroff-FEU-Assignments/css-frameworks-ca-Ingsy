@@ -19,8 +19,12 @@
   background-color: var(--white-colour);
 }
 
-.btn-outline-success:hover {
-  color: var(--pink-colour);
-  background-color: var(--pink-colour);
-  border-color: var(--pink-colour);
+.btn-outline-success {
+  color: var(--white-colour) !important;
+  background-color: var(--pink-colour) !important;
+  border-color: var(--pink-colour) !important;
+}
+
+.mr-sm-2 {
+  margin-right: 0px !important;
 }
