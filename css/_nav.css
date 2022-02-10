@@ -20,10 +20,19 @@
   background-color: var(--white-colour);
 }
 
+.navbar-collapse {
+  background-color: var(--nav-colour) !important;
+  z-index: 2;
+}
 .btn-outline-success {
   color: var(--white-colour) !important;
   background-color: var(--pink-colour) !important;
   border-color: var(--pink-colour) !important;
+  margin-right: 65px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .mr-sm-2 {
