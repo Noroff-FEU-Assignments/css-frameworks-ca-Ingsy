@@ -1,0 +1,16 @@
+.carousel-indicators li {
+  height: 30px;
+  color: $white-colour;
+}
+
+.carousel-indicators li .active {
+  color: $pink-colour;
+}
+
+.nav-link {
+  color: $darkgrey-colour;
+}
+
+.nav-link .active {
+  color: $pink-colour;
+}
