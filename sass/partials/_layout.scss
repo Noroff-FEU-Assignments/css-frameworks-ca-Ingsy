@@ -18,6 +18,10 @@ footer {
   height: 53px;
 }
 
+.fa-brands {
+  color: $darkgrey-colour;
+}
+
 .col-sm {
   margin-bottom: 30px;
 }
@@ -29,4 +33,10 @@ footer {
 .wrapper {
   background-color: $primary;
   margin: 0px;
+}
+
+@media (max-width: 992px) {
+  footer {
+    height: 165px;
+  }
 }
