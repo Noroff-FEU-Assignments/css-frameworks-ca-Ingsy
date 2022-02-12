@@ -15,8 +15,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: var(--white-colour);
-  margin-left: 75px;
-  margin-right: 65px;
   height: 53px;
 }
 
