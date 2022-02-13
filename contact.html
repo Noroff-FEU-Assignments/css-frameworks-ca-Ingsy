@@ -10,6 +10,11 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -48,16 +53,16 @@
             >
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline input-group my-2">
           <input
-            class="form-control mr-sm-2"
+            class="form-control"
             type="search"
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Go
-          </button>
+          <div class="input-group-append">
+            <button class="btn btn-outline-success" type="submit">Go</button>
+          </div>
         </form>
       </div>
     </nav>
@@ -73,7 +78,7 @@
               <i class="fa-solid fa-phone"></i>123 456 7890
             </li>
             <li class="list-group-item">
-              <i class="fa-solid fa-location-dot"></i>
+              <i class="fa-solid fa-location-pin"></i>
               123 Some Street Somewhere Some City 10000
             </li>
           </ul>
@@ -97,15 +102,17 @@
               <textarea class="form-control" id="Message" rows="6"></textarea>
             </div>
             <div class="form-group form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="exampleCheck1"
-              />
-              <label class="form-check-label" for="exampleCheck1"
-                >Allow us to sell your personal details to whomever we
-                want</label
-              >
+              <div>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </div>
+              <div>
+                <label>
+                  Allow us to sell your personal details to whomever we want
+                </label>
+              </div>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -113,9 +120,17 @@
       </div>
     </div>
     <footer class="footer">
+      <div>
+        <i class="fa-brands fa-vimeo"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
       <div class="footer__item">hello@email.com</div>
       <div class="footer__item">Copyright 2020</div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/b0782a38e3.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

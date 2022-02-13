@@ -10246,7 +10246,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .form-control {
-  width: 487px;
+  max-width: 487px;
   background-color: white;
   color: white;
   border: none;
@@ -10263,7 +10263,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .contact-form {
-  width: 555px;
   background-color: #efefef;
   padding: 33px;
 }
@@ -10274,6 +10273,28 @@ a.text-dark:hover, a.text-dark:focus {
   height: 58px;
   width: 100%;
   padding: 10px;
+}
+
+label input {
+  display: none;
+}
+
+label span {
+  height: 24px;
+  width: 24px;
+  background-color: #e92569;
+  border: 1px solid #e92569;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+[type="checkbox"]:checked + span:before {
+  content: "\2714";
+  position: absolute;
+  color: #ffffff;
+  top: 0px;
+  left: 6px;
 }
 
 .list-group-item:last-of-type {
@@ -10295,9 +10316,26 @@ a.text-dark:hover, a.text-dark:focus {
           flex-direction: column;
 }
 
+.form-check {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .carousel-indicators li {
   height: 30px;
-  color: #ffffff;
+  background-color: #e92569;
 }
 
 .carousel-indicators li .active {
@@ -10312,14 +10350,63 @@ a.text-dark:hover, a.text-dark:focus {
   color: #e92569;
 }
 
+.tab-content-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 40px;
+}
+
+.tab-content-col img {
+  margin-right: 30px;
+  border: none;
+}
+
+.tab-content-col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social {
+  color: #0a0a0a !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social .fa-brands {
+  margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+  .tab-content-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 html,
 body {
   height: 100%;
 }
 
 body {
-  font-family: "Lato", sans-serif;
   background-color: #efefef;
+  background-image: radial-gradient(circle at center, #ffffff, #efefef);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10339,12 +10426,26 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-style: 1px #767676;
   background-color: #ffffff;
   height: 53px;
+  padding: 10px;
 }
 
 .fa-brands {
   color: #767676;
+  font-style: normal;
+}
+
+.social .fa-brands {
+  color: #0a0a0a;
+}
+
+.fa-solid {
+  color: #767676;
+  margin: 15px;
+  font-size: larger;
+  font-style: normal;
 }
 
 .col-sm {
@@ -10356,13 +10457,19 @@ footer {
 }
 
 .wrapper {
-  background-color: #efefef;
-  margin: 0px;
+  margin: 75px;
 }
 
 @media (max-width: 992px) {
   footer {
     height: 165px;
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+  }
+  .wrapper {
+    margin: 31px;
   }
 }
 
@@ -10371,7 +10478,6 @@ footer {
   font-weight: bold;
   font-size: 20px;
   color: #e92569;
-  background-color: #efefef;
   padding-left: 16px;
 }
 
@@ -10382,7 +10488,6 @@ footer {
 
 .navbar {
   background-color: #efefef;
-  color: white;
   height: 70px;
   padding: 0;
 }
@@ -10396,9 +10501,7 @@ footer {
 }
 
 .navbar-collapse {
-  z-index: 1004;
-  background-color: #efefef;
-  padding: 16px;
+  padding: 40px;
 }
 
 .btn-outline-success {
@@ -10440,6 +10543,10 @@ footer {
   .form-inline {
     max-width: none;
     width: 100%;
+  }
+  .navbar-collapse {
+    z-index: 1004;
+    background-color: #efefef;
   }
 }
 
@@ -10487,10 +10594,6 @@ footer {
   border-radius: 10px;
 }
 
-.news-2 {
-  margin-left: 75px;
-}
-
 @media (max-width: 754px) {
   .home-block .btn {
     width: 283px;
@@ -10508,4 +10611,8 @@ h1 {
   font-family: "font-family: Playfair Display SC", serif;
   font-size: 34px;
   color: #e92569;
+}
+
+body {
+  font-family: "Lato", sans-serif;
 }

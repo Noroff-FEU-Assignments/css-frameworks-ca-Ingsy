@@ -4,8 +4,12 @@ body {
 }
 
 body {
-  font-family: "Lato", sans-serif;
   background-color: $primary;
+  background-image: radial-gradient(
+    circle at center,
+    $white-colour,
+    $navbar-colour
+  );
   display: flex;
   flex-direction: column;
 }
@@ -14,14 +18,27 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-style: 1px $darkgrey-colour;
   background-color: $white-colour;
   height: 53px;
+  padding: 10px;
 }
 
 .fa-brands {
   color: $darkgrey-colour;
+  font-style: normal;
 }
 
+.social .fa-brands {
+  color: $black-colour;
+}
+
+.fa-solid {
+  color: $darkgrey-colour;
+  margin: 15px;
+  font-size: larger;
+  font-style: normal;
+}
 .col-sm {
   margin-bottom: 30px;
 }
@@ -31,12 +48,15 @@ footer {
 }
 
 .wrapper {
-  background-color: $primary;
-  margin: 0px;
+  margin: 75px;
 }
 
 @media (max-width: 992px) {
   footer {
     height: 165px;
+    flex-direction: inherit;
+  }
+  .wrapper {
+    margin: 31px;
   }
 }
