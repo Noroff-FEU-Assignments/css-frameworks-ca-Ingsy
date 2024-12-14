@@ -1,0 +1,66 @@
+.form-control {
+  max-width: 487px;
+  background-color: white;
+  color: white;
+  border: none;
+  padding: 1, 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form {
+  background-color: $navbar-colour;
+  padding: 33px;
+}
+
+.contact-form .btn {
+  background-color: $darkgrey-colour;
+  border: none;
+  height: 58px;
+  width: 100%;
+  padding: 10px;
+}
+
+label input {
+  display: none;
+}
+
+label span {
+  height: 24px;
+  width: 24px;
+  background-color: $pink-colour;
+  border: 1px solid $pink-colour;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+[type="checkbox"]:checked + span:before {
+  content: "\2714";
+  position: absolute;
+  color: $white-colour;
+  top: 0px;
+  left: 6px;
+}
+
+.list-group-item:last-of-type {
+  border-bottom: none;
+}
+
+.list-group {
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-check {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}

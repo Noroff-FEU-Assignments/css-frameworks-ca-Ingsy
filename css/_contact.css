@@ -1,0 +1,38 @@
+.form-control {
+  width: 487px;
+  background-color: white;
+  color: white;
+  border: none;
+  padding: 1, 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form {
+  width: 555px;
+  background-color: var(--nav-colour);
+  padding: 33px;
+}
+
+.contact-form .btn {
+  background-color: var(--darkgrey-colour);
+  border: none;
+  height: 58px;
+  width: 100%;
+  padding: 10px;
+}
+
+.list-group-item:last-of-type {
+  border-bottom: none;
+}
+
+.list-group {
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+}
+

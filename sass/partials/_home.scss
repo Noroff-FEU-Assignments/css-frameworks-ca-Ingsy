@@ -1,0 +1,48 @@
+.carousel-indicators li {
+  height: 30px;
+  background-color: $pink-colour;
+}
+
+.carousel-indicators li .active {
+  color: $pink-colour;
+}
+
+.nav-link {
+  color: $darkgrey-colour;
+}
+
+.nav-link .active {
+  color: $pink-colour;
+}
+
+.tab-content-col {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+}
+
+.tab-content-col img {
+  margin-right: 30px;
+  border: none;
+}
+
+.tab-content-col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social {
+  color: $black-colour !important;
+  display: flex;
+}
+
+.social .fa-brands {
+  margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+  .tab-content-col {
+    flex-direction: column;
+  }
+}

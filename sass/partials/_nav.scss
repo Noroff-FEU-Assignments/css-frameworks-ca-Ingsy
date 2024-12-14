@@ -1,0 +1,75 @@
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: $pink-colour;
+  padding-left: 16px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand {
+  color: $pink-colour;
+}
+
+.navbar {
+  background-color: $navbar-colour;
+  height: 70px;
+  padding: 0;
+}
+
+.navbar-toggler {
+  margin-right: 16px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  background-color: $white-colour;
+}
+
+.navbar-collapse {
+  padding: 40px;
+}
+
+.btn-outline-success {
+  color: $white-colour;
+  background-color: $pink-colour;
+  border-color: $pink-colour;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.mr-sm-2 {
+  margin-right: 0px !important;
+}
+
+.form-inline {
+  max-width: 400px;
+}
+
+#nav-tab {
+  border-bottom: none;
+
+  &.nav-link {
+    background-color: #efefef;
+  }
+
+  &.active {
+    background-color: #fff;
+    border-bottom: none;
+  }
+}
+#nav-tabContent {
+  background-color: #fff;
+}
+
+@media (max-width: 992px) {
+  .form-inline {
+    max-width: none;
+    width: 100%;
+  }
+  .navbar-collapse {
+    z-index: 1004;
+    background-color: $navbar-colour;
+  }
+}

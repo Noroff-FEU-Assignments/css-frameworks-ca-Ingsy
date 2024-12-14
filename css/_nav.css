@@ -1,0 +1,39 @@
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--pink-colour);
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand {
+  color: var(--pink-colour);
+}
+
+.navbar {
+  background-color: var(--nav-colour) !important;
+  color: white;
+  height: 70px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+  background-color: var(--white-colour);
+}
+
+.navbar-collapse {
+  z-index: 2;
+}
+.btn-outline-success {
+  color: var(--white-colour) !important;
+  background-color: var(--pink-colour) !important;
+  border-color: var(--pink-colour) !important;
+  margin-right: 65px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.mr-sm-2 {
+  margin-right: 0px !important;
+}

@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--background-colour);
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white-colour);
+  height: 53px;
+}
+
+.col-sm {
+  margin-bottom: 30px;
+}
+
+.fa-brands {
+  color: var(--darkgrey-colour);
+}
+
+.wrapper {
+  background-color: var(--background-colour);
+  margin: 0px;
+}
